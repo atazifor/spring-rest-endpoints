@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentService {
     public PaymentDetails processPayment() {
-        throw new NotEnoughMoneyException();
+        throw new NotEnoughMoneyException("From payment Service");
     }
 }
